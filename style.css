@@ -1,0 +1,107 @@
+body {
+  background-color: #f8f8f8;
+  font-family: Arial, Helvetica, sans-serif; }
+  body .list-wrapper .list {
+    background-color: #ffffff;
+    margin: 15px;
+    padding: 30px 30px 50px;
+    border: 1px solid #c7c7c7;
+    border-radius: 10px;
+    display: flex; }
+    body .list-wrapper .list .img-wrapper {
+      flex-grow: 1;
+      margin: auto;
+      text-align: center;
+      border-right: 1px solid #cccaca; }
+    body .list-wrapper .list .description-wrapper {
+      flex-grow: 4;
+      margin: auto 20px;
+      font-size: 15px; }
+      body .list-wrapper .list .description-wrapper .product-desc {
+        font-weight: 600; }
+      body .list-wrapper .list .description-wrapper .firm-name {
+        position: relative; }
+        body .list-wrapper .list .description-wrapper .firm-name i {
+          color: #0072ff;
+          font-size: 14px;
+          margin-left: 5px; }
+          body .list-wrapper .list .description-wrapper .firm-name i:hover {
+            cursor: pointer; }
+        body .list-wrapper .list .description-wrapper .firm-name .popover {
+          display: none;
+          margin-left: 10px;
+          position: absolute;
+          z-index: 100;
+          max-width: 280px;
+          padding: 5px;
+          line-height: 1.3;
+          font-size: 12px;
+          background-color: #fff;
+          border: 1px solid rgba(0, 0, 0, 0.2);
+          border-radius: 5px;
+          box-shadow: 0 5px 10px #00000033;
+          margin-left: 10px;
+          left: 25%;
+          top: -30px;
+          overflow-y: scroll;
+          max-height: 80px; }
+          body .list-wrapper .list .description-wrapper .firm-name .popover .title {
+            text-decoration: underline; }
+        body .list-wrapper .list .description-wrapper .firm-name:hover .popover {
+          display: block; }
+    body .list-wrapper .list .price-wrapper {
+      flex-grow: 3;
+      text-align: right;
+      line-height: 1.5;
+      position: relative; }
+      body .list-wrapper .list .price-wrapper .old-price {
+        font-size: 12px; }
+        body .list-wrapper .list .price-wrapper .old-price span {
+          text-decoration: line-through; }
+      body .list-wrapper .list .price-wrapper .current-price {
+        font-size: 20px;
+        font-weight: 600; }
+      body .list-wrapper .list .price-wrapper .buy-wrapper {
+        position: absolute;
+        right: 0;
+        padding: 10px 0; }
+        body .list-wrapper .list .price-wrapper .buy-wrapper button {
+          padding: 8px 50px;
+          color: #ffffff;
+          background-color: #2d86cd;
+          border-color: #2d86cd;
+          user-select: none;
+          border: 1px solid transparent;
+          border-radius: .25rem; }
+          body .list-wrapper .list .price-wrapper .buy-wrapper button.inline {
+            color: #2d86cd;
+            background-color: #ffffff;
+            border-color: #2d86cd;
+            font-size: 10px;
+            padding: 2px 25px; }
+            body .list-wrapper .list .price-wrapper .buy-wrapper button.inline a {
+              display: block;
+              color: #2d86cd;
+              text-decoration: unset;
+              margin: 0;
+              font-size: 15px;
+              font-weight: 600; }
+  @media only screen and (max-width: 767px) {
+    body .list-wrapper .list {
+      flex-wrap: wrap;
+      text-align: center;
+      gap: 10px; }
+      body .list-wrapper .list .img-wrapper {
+        border-right: none; }
+      body .list-wrapper .list .description-wrapper {
+        width: 100%; }
+      body .list-wrapper .list .price-wrapper {
+        text-align: center; }
+        body .list-wrapper .list .price-wrapper .buy-wrapper button {
+          padding: 5px 25px !important;
+          font-size: 13px; }
+          body .list-wrapper .list .price-wrapper .buy-wrapper button.inline {
+            font-size: 7px !important;
+            padding: 3px 15px !important; }
+            body .list-wrapper .list .price-wrapper .buy-wrapper button.inline a {
+              font-size: 13px !important; } }
