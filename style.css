@@ -11,10 +11,9 @@ body {
     body .list-wrapper .list .img-wrapper {
       flex-grow: 1;
       margin: auto;
-      text-align: center;
       border-right: 1px solid #cccaca; }
     body .list-wrapper .list .description-wrapper {
-      flex-grow: 4;
+      flex-grow: 8;
       margin: auto 20px;
       font-size: 15px; }
       body .list-wrapper .list .description-wrapper .product-desc {
