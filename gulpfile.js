@@ -11,7 +11,7 @@ gulp.task('sass', function(cb) {
         return f.base;
       })
     );
-  cb();
+  cb(); 
 });
 
 gulp.task(
